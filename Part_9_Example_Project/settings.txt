@@ -1,0 +1,1 @@
+Dict{String, Any}("starting_config" => "square", "cell_number" => 50176, "timesteps" => 1000, "gridsize" => 2000)
