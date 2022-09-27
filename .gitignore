@@ -1,16 +1,6 @@
-test50.mp4
-test60.mp4
-test20000.mp4
-test5001.mp4
-test101.mp4
-test6000.mp4
 *.mp4
 *.webm
-*.png
-*.jpg
 *.jld
-*.jls
-*.csv
 *.mkv
 
 
