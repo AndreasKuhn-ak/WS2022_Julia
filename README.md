@@ -1,3 +1,6 @@
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD)
+
 # WS2022_Julia
 
 This is an introduction course into the Julia programming language. You don’t need any prior knowledge in programming to follow this course.  The course is split up into 9 chapters (chapter 10 not finished, yet) which will teach you how to use Julia in Jupyter Notebooks in a scientific context. When you have finished the course you will be able to write custom functions, import data, make beautiful plots, perform data analysis and understand how simulations work in Julia.  
@@ -8,4 +11,3 @@ All chapters are inside Jupyter notebooks. Install Anaconda, Julia and the packa
 Tutorial: 
 https://datatofish.com/add-julia-to-jupyter/
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD)
