@@ -8,3 +8,4 @@ All chapters are inside Jupyter notebooks. Install Anaconda, Julia and the packa
 Tutorial: 
 https://datatofish.com/add-julia-to-jupyter/
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD)
