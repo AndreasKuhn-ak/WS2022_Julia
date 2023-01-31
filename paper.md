@@ -123,11 +123,7 @@ We acknowledge contributions from Simon Schardt, Christopher Nauroth-Kreß and t
 
 ## Comments: 
 
- 
-<span style="color:red">*ist es möglich, dass du z.B. über Zenodo deine Blogpost eine doi zuweist, damit du ihn dann hier referenzieren kannst?* </span>
-- Also dem blogpost an sich kann ich keine doi zuweisen, aber ich könnte den inhalt des posts zusammen mit den code snipits in ein repo packen und das dann z.b. auf zenodo (oder auf einer anderen dafür zertifizierten plattform) hochladen. Dann würde das repo eine doi bekommen. 
-- Aber es wurden tatsächlich auch schon medium posts in peer reviewten journals ohne doi zitiert.  (https://medium.com/emergent-phenomena/my-medium-blog-was-cited-in-a-peer-reviewed-journal-87711883d8e5)
-- Deswegen frage ich mich, ob das mit dem repo (und der damit verbundenen aufwand) notwendig ist da mein blog post, ja keine entscheidende primär quelle für das paper ist, sondern nur nochmal zusätzlich unterschreichen soll das julia schnell ist 
+
 
 ## References
 
