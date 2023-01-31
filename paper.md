@@ -53,8 +53,16 @@ Eventhough, there are already free Julia courses available online ([1](https://c
 
 ## Details of the course
 
+
+### Target audicence
+The main target audience of this course are scientists who want to or are already using programming in their work. But as no prerequisites are needed, everybody can follow the course without problems. 
+
+Programmers who already have experience in other languages can probably finish the first five lession quite fast, as a lot of gerneral programming concepts are introduced there. But the last four more `Julia` specifc lessons should be very useful for them as well.
+
+
 ### Learning objectives 
 The learning resource aims to enable students to:
+
 * use interactive notebooks 
 * understand the basic structure of any programming language
 * use Julia in a scientifc context:
@@ -74,8 +82,7 @@ The learning resource aims to enable students to:
 8. Data Analysis
 9. Simple Simulation
 
-### Prerequisites
-There are no prerequisites to be able to follow the course. 
+
 
 ### Instructional design
 The Jupyter notebooks contain 4 different types of cells: 
