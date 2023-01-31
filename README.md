@@ -1,35 +1,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD)
 
----
-title: 'Computational Science in Julia - An introduction course into the Julia programming language '
-tags:
-  - Julia
-  - course
-  - beginners
-  - plotting
-  - data analysis
-  - agent based model
-authors:
-  - name: Andreas Kuhn 
-    orcid: 0000-0001-8146-2095
-    affiliation: 1
-  - name: Sabine C. Fischer
-    orchid: 0000-0001-7237-814X
-    affiliation: 1
-affiliations:
- - name: Center for Computational and Theoretical Biology , University of Würzburg
-   index: 1
 
-date: 23/01/23
-bibliography: paper.bib
-
-pandoc_args: ["--toc", "--toc-depth=2",]
-output: pdf_document
----
-
-
-# Computational Science in Julia - An introduction course into the Julia programming language
 
 # Scientific programming in Julia - An introductory course
 
@@ -107,10 +79,9 @@ Alternatively, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuh
 ## Acknowledgements
 
 We acknowledge contributions from Simon Schardt, Christopher Nauroth-Kreß and the various students who served as beta testers for this course. 
+## License
 
-## Comments: 
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-
-
-## References
+Scientific programming in Julia - An introductory course by [Andreas Kuhn](https://github.com/AndreasKuhn-ak) and [Sabine Fischer](https://github.com/scfischer) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
