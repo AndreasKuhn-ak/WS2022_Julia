@@ -55,9 +55,9 @@ Eventhough, there are already free Julia courses available online ([1](https://c
 
 
 ### Target audicence
-The main target audience of this course are scientists who want to or are already using programming in their work. But as no prerequisites are needed, everybody can follow the course without problems. 
+The main target audience of this course are scientists who want or are already using programming in their work. But no prerequisites are needed, therefore anybody can follow the course without problems. 
 
-Programmers who already have experience in other languages can probably finish the first five lession quite fast, as a lot of gerneral programming concepts are introduced there. But the last four more `Julia` specifc lessons should be very useful for them as well.
+Programmers who already have experience in other languages should be able to finish the first five lession quite fast, as a lot of gerneral programming concepts are introduced there as well. But the last four more `Julia` specifc lessons should be very useful for them nevertherless.
 
 
 ### Learning objectives 
@@ -99,11 +99,12 @@ We started using Julia in our own work out of frustation of the execution speed 
 
 During the switch, we also had to learn Julia from ground up. And what's the best way to learn something new? Right, teaching it. Therefore, we developed this course with the original purpose to educate ourselves and new members of our team on Julia. Since the begining of 2022, seven other people have completed the course. Their feedback was used to iteratively improve the course over time. 
 
-We belive that the course has now reached a level of maturity, that it offers great value to everybody who want to learn Julia. We also plan to teach the course to students of our faculty as a semester course in a weekly manner and to host a training workshop in a research consortia. Apart from our efforts, everybody is invited use the course independently to study and to teach Julia. For that pupose, we have been providing to course material on our website as a free [download](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/) since 03/2022. 
+We belive that the course has reached a level of maturity, that it offers great value to everybody who want to learn Julia. We also plan to teach the course to students of our faculty as a semester course in a weekly manner and to host a training workshop in a research consortia. Apart from our efforts, everybody is invited use the course independently to study or to teach Julia. For that pupose, we have been providing to course material on our website as a free [download](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/) since 03/2022. 
 
 
 ## Get started
 Either clone this [github repository]( https://github.com/AndreasKuhn-ak/WS2022_Julia) or download the course files from our [website](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/). In the repository is a file called "Julia_course_manual.pdf" which tells you what software you need to install, to use the course on your local machine. 
+
 Alternatively, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter nootebooks in your browser without any prior installations. But keep in mind, that your changes will only be saved temporarily and the GPU accelerated plotting in the ninth part will not work due to mybinder limititations.   
 
 
