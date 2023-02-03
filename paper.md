@@ -62,10 +62,10 @@ Programmers who already have experience in other languages should be able to fin
 
 
 ### Learning objectives 
-The learning resource aims to enable students to:
+The learning resource aims to enable learners to:
 
 * use interactive notebooks 
-* understand the basic structure of any programming language<span style="color:red"> etwas abschwächen </span>
+* understand the basic structure of a programming language
 * use Julia in a scientifc context:
     * import/export data
     * analyse data
@@ -81,7 +81,7 @@ The learning resource aims to enable students to:
 6. Plotting
 7. Import/Export 
 8. Data Analysis
-9. Simple Simulation <span style="color:red">vielleicht ein etwas ansprechenderer Titel? </span>
+9. Application: Simple Random Walk Simulation 
 
 
 
@@ -98,15 +98,14 @@ The first three cell types are essential in understanding the contents of the co
 ## Experience of use
 We started using Julia in our own work out of frustation of the execution speed of raw Python. The choice of Julia compared to other compiled and fast languages like C/++, Fortran or Rust was easy, as Julia allowed us to keep the familar and convenient interactive development workflow that Python estabilshed. 
 
-During the switch, we also had to learn Julia from ground up. And what is the best way to learn something new? Right, by teaching it. Therefore, we developed this course with the original purpose to educate ourselves and new members of our team on Julia. Since the begining of 2022, seven other people have completed the material as a self-study course. Their feedback was used to iteratively improve the course over time. 
+During the switch, we also had to learn Julia from ground up. And what is the best way to learn something new? Right, by teaching it. Therefore, we developed this course with the original purpose to educate ourselves and new members of our team on Julia. Since the begining of 2022, seven other people have completed the material as a self-study course. Furthermore, we have been providing the course material on our website as a free [download](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/) since March 2022. The feedback was used to iteratively improve the course over time. 
 
-We belive that the course has reached a level of maturity, that it offers great value to everybody who wants to learn Julia. We also plan to teach the course to students of our faculty as a semester course in a weekly manner <span style="color:red">planen wir das? </span> and to host a training workshop in a research consortium. Apart from our efforts, everybody is invited use the course independently to learn or to teach Julia. For that pupose, we have been providing the course material on our website as a free [download](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/) since March 2022. 
+We believe that the course has reached a level of maturity and that it offers great value to everybody who wants to learn Julia. Next, we plan to host a training workshop in a research consortium. In addition, we are convinced that the course could be readily taught in a weekly manner as part of an undergraduate or graduate programme. Therefore, we invite everybody to use the course independently to learn or to teach Julia. 
 
-
-## Get started
+## Get started -> later only in readme
 To run the course material on your local machine, either clone this [github repository]( https://github.com/AndreasKuhn-ak/WS2022_Julia) or download the course files from our [website](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/)<span style="color:red">meinst du es ist sinnvoll beides so zu behalten? oder sollten wir auf der Webseite nicht lieber das git Repo verlinken? </span>. The repository contains a file called "Julia_course_manual.pdf" which lists the required software. 
 
-For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter nootebooks in your browser. But keep in mind, that your changes will only be saved temporarily <span style="color:red">man kann aber die Notebooks runterladen, dann hat man die changes </span> and the GPU accelerated plotting in the ninth part will not work due to mybinder limititations.   
+For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter nootebooks in your browser <span style="color:red"> note, that sometimes limited server capacity </span>. But keep in mind, that your changes will only be saved temporarily <span style="color:red">man kann aber die Notebooks runterladen, dann hat man die changes </span> and the GPU accelerated plotting in the ninth part will not work due to mybinder limititations.   
 
 
 ## Figures
@@ -122,7 +121,7 @@ Figures can be included like this: ![Example figure.](figure.png)
 * Kurs Korretur lesen, damit keine (möglichst wenige) Typos drin sind
 * sie betonen überall immer, dass sie gerne die Geschichte des Kurses im ARtikel lesen möchten - das sollte also irgendwo mit drin sein
 * adaptation from others
-* <span style="color:red">comunity notes: Anpassungen von anderen</span>
+* <span style="color:red">comunity notes: Anpassungen von anderen -> readme</span>
 
 
 
