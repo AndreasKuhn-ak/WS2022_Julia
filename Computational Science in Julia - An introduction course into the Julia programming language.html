@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0079)file:///C:/Users/ank10ki/AppData/Local/Temp/mume2023024-14224-h22epn.eumjw.html -->
+<!-- saved from url=(0078)file:///C:/Users/ank10ki/AppData/Local/Temp/mume2023114-2248-odum09.tibmf.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Computational Science in Julia - An introduction course into the Julia programming language </title>
       
@@ -301,34 +301,37 @@ pre[data-line] .line-highlight[data-end]:after {
 </style></head>
     <body for="html-export"><div id="MathJax_Message" style="display: none;"></div>
       <div class="mume markdown-preview  ">
-      <h1 id="computational-science-in-julia---an-introduction-course-into-the-julia-programming-language--">Computational
+      <h1 id="computational-science-in-julia---an-introduction-course-into-the-julia-programming-language-">Computational
 Science in Julia - An introduction course into the Julia programming
 language</h1>
+<h1 id="scientific-programming-in-julia---an-introductory-course-">Scientific
+programming in Julia - An introductory course</h1>
 <h2 id="summary-">Summary</h2>
-<p>This course provides an introduction into the scientific programming
-language <code>Julia</code>. No previous knowledge is necessary to
-follow the nine course lectures. Every lecture contains one Jupyter
-Notebook, where executable code examples are shown together with
-specific and general explanations about their applications. The first 5
-lectures cover the basic language syntax of <code>Julia</code> and
-Jupyter Notebooks (e.g.&nbsp;data types, package installation, functions, …).
-The last 4 lectures are more targeted towards scientific applications
+<p>This course provides an introduction into scientific programming in
+<code>Julia</code>. Compared to other popular languages in this field
+like <code>Python</code> or <code>C++</code>,<code>Julia</code> has been
+specifically designed for scientifc applications.</p>
+<p><span style="color:red">hier fehlen noch ein, zwei sätze</span></p>
+<p>No previous knowledge is necessary to follow the nine course
+lectures. Every lecture contains one Jupyter Notebook, where executable
+code examples are shown together with markdown cells containing specific
+explanations about the shown code but also general concepts about
+programming in <code>Julia</code>. The first five lectures cover the
+basic language syntax (e.g.&nbsp;data types, package installation, functions,
+…). The last four lectures are targeted towards scientific applications
 and cover topics like plotting, data import/export, data analysis and a
-simple agent based simulation. Each lecture ends with exercises which
-directly apply the learned concepts. The exercises are divided into
-three difficulties: easy, medium and hard. Easy and medium excises can
-be solved using the contents of the course alone, whereas some hard
-exercises require additional research, to transfer the acquired
-knowledge to new problems. Sample solutions for all exercises are
-provided. After the course is finished, one is equipped with all the
+simple agent-based simulation. Each lecture ends with exercises, which
+directly apply the learned concepts. Sample solutions for all exercises
+are provided. After the course is finished, one is equipped with all the
 necessary tools to start scientific programming in
 <code>Julia</code>.</p>
 <h2 id="statement-of-need--">Statement of Need</h2>
 <p>The <code>Julia</code> programming language first appeared in 2012
 <span class="citation" data-cites="bezanson_julia_2012">(Bezanson et al.
-2012)</span> and has been designed specifically for scientific
-computation and data analysis. Since then, it has seen a rapidly growing
-adaptation in various fields of science. Ranging from black holes <span class="citation" data-cites="fernandes_new_2022">(Fernandes and Mulryne
+2012)</span> and had two main design goal from the start: Speed and
+interactiviy which makes it a perfect fit for scientific computation and
+data analysis. Since then, it has seen a rapidly growing adaptation in
+various fields of science. Ranging from black holes <span class="citation" data-cites="fernandes_new_2022">(Fernandes and Mulryne
 2022)</span> to quantum systems <span class="citation" data-cites="gawron_quantuminformationjljulia_2018 kramer_quantumopticsjl_2018">(Gawron,
 Kurzyk, and Pawela 2018; Krämer et al. 2018)</span> in physics to
 applications in biology <span class="citation" data-cites="roesch_julia_2021 knopp_mrirecojl_2021">(Roesch et al. 2021;
@@ -339,39 +342,150 @@ language is quite remarkable, as programming languages are a field that
 is historically known to be very slow at pivoting
 (e.g.&nbsp;<code>Python</code> and <code>C++</code> are both over 30 years
 old).</p>
-<p>One reason for this, is that <code>Julia</code> solves the so-called
-two language problem <span class="citation" data-cites="perkel_julia_2019">(Perkel 2019)</span>, that has been
-tormenting researcher for decades: The classical workflow of a
-computational scientist often involves using two or more languages for
-different tasks. For example, <code>Python</code> or <code>Matlab</code>
-is used for fast prototyping and plotting, <code>R</code> for
-statistical analysis and a compiled language like <code>C/++</code> or
-<code>Fortran</code> for computational expensive simulations. Using
-different languages creates a lot of unnecessary overhead: Firstly,
-researcher have to spend more time learning to code (which is especially
-true for <code>C/++</code> or <code>Fortran</code>) and secondly,
-exchanging data &amp; logic between languages can be very tedious and
-time-consuming.</p>
+<p>One reason for this is that <code>Julia</code> solves the two
+language problem <span class="citation" data-cites="perkel_julia_2019">(Perkel 2019)</span> that has been
+tormenting many researcher for decades: For example, <code>Python</code>
+or <code>Matlab</code> are used for fast prototyping and plotting,
+<code>R</code> for statistical analyses and a compiled language like
+<code>C/++</code> or <code>Fortran</code> for computationally expensive
+simulations. Using two or more languages creates a lot of unnecessary
+overhead: Firstly, researcher have to spend more time learning to code
+in two languages (which is especially true for <code>C/++</code> or
+<code>Fortran</code>) and secondly, exchanging data and logic between
+languages can be very tedious and time-consuming.</p>
 <p>Julia solves this problem, as all the mentioned tasks can be
-accomplished in Julia alone. Its syntax is very simple and heavily
-inspired by Matlab and Python, which allows fast prototyping<span class="citation" data-cites="andreaskuhn_how_2022">(Kuhn 2022)</span>.
-The plotting package <code>Makie</code> provides similar capabilities as
-<code>matplotlib</code> in <code>Python</code> or <code>ggplot2</code>
-in <code>R</code>. The meta package <code>StatsKit</code> includes all
-necessary tools to do sophisticated statistical analysis. And most
-importantly, <code>Julia</code> is fast. Depending on the benchmark,
+accomplished in Julia alone. Its simple syntax is heavily inspired by
+Python and it features , which allows fast prototyping <span class="citation" data-cites="andreaskuhn_how_2022">(Kuhn 2022)</span>.
+The plotting package <code>Makie</code> <span class="citation" data-cites="DanischKrumbiegel2021">(Danisch and Krumbiegel 2021)</span>
+provides similar capabilities as <code>matplotlib</code> in
+<code>Python</code> or <code>ggplot2</code> in <code>R</code>. The meta
+package <code>StatsKit</code> includes all necessary tools to do
+sophisticated statistical analysis. And most importantly,
+<code>Julia</code> is fast. Depending on the benchmark,
 <code>Julia</code> is on pair or within a factor of 2 to <code>C</code>
 <span class="citation" data-cites="al_julia_nodate churavy_bridging_2022">(Jeff Bezanson 2021;
 Churavy et al. 2022)</span>.</p>
-<p>Therefore, there is no better time than now to start learning Julia
-and to get to know all the amazing packages mentioned above. This
-course…</p>
+<p><img src="./Computational Science in Julia - An introduction course into the Julia programming language_files/Fi8Acb1.png"></p>
+<p>Therefore, there is no better time than now to give Julia and its
+package ecosystem a try.</p>
+<p>Eventhough there are already free Julia courses available online (<a href="https://carpentries-incubator.github.io/julia-novice/">1</a>,<a href="https://www.datacamp.com/courses/introduction-to-julia">2</a>,<a href="https://juliaacademy.com/courses">3</a>), we believe, that this
+course offers additional value for (new) scientific programmers.</p>
+<p>As it does not require any prior knowledge, is self-contained and
+build on one another, introduces many relevant topics in scientifc
+programming and offers training exercises together with sample solutions
+to each lesson.</p>
+<h2 id="details-of-the-course-">Details of the course</h2>
+<h3 id="learning-objectives--">Learning objectives</h3>
+<p>The learning resource aims to enable learners to:</p>
+<ul>
+<li>use interactive notebooks</li>
+<li>understand the basic structure of a programming language</li>
+<li>use Julia in a scientifc context:
+<ul>
+<li>import/export data</li>
+<li>analyse data</li>
+<li>plot data</li>
+</ul></li>
+</ul>
+<h3 id="content-">Content</h3>
+<ol type="1">
+<li>Jupyter Notebooks</li>
+<li>Package Installation</li>
+<li>Datatypes</li>
+<li>Conditional Iterators</li>
+<li>Functions</li>
+<li>Plotting</li>
+<li>Import/Export</li>
+<li>Data Analysis</li>
+<li>Application: Simple Random Walk Simulation</li>
+</ol>
+<h3 id="instructional-design-">Instructional design</h3>
+<p>The Jupyter notebooks contain four different types of cells: -
+General explanations - Executable code examples - Exercises - Meta
+comments/hints/notes</p>
+<p>The first three cell types are essential in understanding the
+contents of the course. The exercises are divided into three
+difficulties: easy, medium and hard. Easy and medium exercises can be
+solved using the content of the course alone, whereas some hard
+exercises require additional research, to transfer the acquired
+knowledge to new problems. The “meta” cells offer additional but non
+essential information. These, can be comments about the differences of
+Julia compared to other languages, advice on good coding practices,… .
+Whereas first time programmers can skip these cells if they want to, we
+expect the meta cells to be particularly useful for already experienced
+programmers switching to <code>Julia</code>.</p>
+<h3 id="target-audicence-">Target audicence</h3>
+<p>The main target audience of this course are scientists who want or
+are already using programming in their work. But no prerequisites are
+needed, therefore anybody can follow the course without problems.</p>
+<p>Programmers who already have experience in other languages should be
+able to finish the first five lession quite fast, as a lot of gerneral
+programming concepts are introduced there as well. But the last four
+more <code>Julia</code> specifc lessons should be very useful for them
+nevertherless.</p>
+<h2 id="experience-of-use-">Experience of use</h2>
+<p>We started using Julia in our own work out of frustation of the
+execution speed of raw Python. The choice of Julia compared to other
+compiled and fast languages like C/++, Fortran or Rust was easy, as
+Julia allowed us to keep the familar and convenient interactive
+development workflow that Python estabilshed.</p>
+<p>During the switch, we also had to learn Julia from ground up. And
+what is the best way to learn something new? Right, teaching it.
+Therefore, we developed this course with the original purpose to educate
+ourselves and new members of our group on Julia. Since the begining of
+2022, seven other people have completed the material as a self-study
+course. Furthermore, we have been providing the course material on our
+website as a free <a href="https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/">download</a>
+since March 2022. The feedback was used to iteratively improve the
+course over time.</p>
+<p>We believe that the course has reached a level of maturity and that
+it offers great value to everybody who wants to learn Julia. Next, we
+plan to host a training workshop in a research consortium. In addition,
+we are convinced that the course could be readily taught in a weekly
+manner as part of an undergraduate or graduate programme. Therefore, we
+invite everybody to use the course independently to learn or to teach
+Julia.</p>
+<h2 id="get-started---later-only-in-readme-">Get started -&gt; later
+only in readme</h2>
+<p>To run the course material on your local machine, clone this <a href="https://github.com/AndreasKuhn-ak/WS2022_Julia">github
+repository</a>. The repository contains a file called
+“Julia_course_manual.pdf” which lists the required software and how to
+install it.</p>
+<p>For a first experience without any prior installation, you can also
+use <a href="https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD">mybinder</a>
+to directly execute the Jupyter nootebooks in your browser.
+Unfortunately this comes with some restrictions: Due the limited server
+capacities of mybinder, the container building phase can sometimes fail
+and the GPU accelerated plotting in the ninth part will not work. You
+should also keep in mind that your changes will only be saved as long as
+your browser session is active, but you can download the changed
+notebooks to your local machine.</p>
 <h2 id="figures-">Figures</h2>
 <p>Figures can be included like this: <img src="file:///C:/Users/ank10ki/Dropbox/phd/Courses/WS2022_Julia/figure.png" alt="Example figure."></p>
+<h2 id="span-stylecolorredto-dosspan-"><span style="color:red">To
+Dos:</span></h2>
+<ul>
+<li>https://openjournals.readthedocs.io/en/jose/review_checklist.html
+Wir müssen sicher gehen, dass wir diese Aspekte alle abdecken</li>
+<li>target audience</li>
+<li>https://jose.theoj.org/papers/10.21105/jose.00156 Artikel mit sehr
+ähnlichem Thema</li>
+<li>github repo mit documentation die das hier beinhaltet:
+https://jose.theoj.org/papers/10.21105/jose.00156</li>
+<li>Kurs Korretur lesen, damit keine (möglichst wenige) Typos drin
+sind</li>
+<li>sie betonen überall immer, dass sie gerne die Geschichte des Kurses
+im ARtikel lesen möchten - das sollte also irgendwo mit drin sein</li>
+<li>adaptation from others</li>
+<li><span style="color:red">comunity notes: Anpassungen von anderen
+-&gt; readme</span></li>
+</ul>
 <h2 id="acknowledgements-">Acknowledgements</h2>
 <p>We acknowledge contributions from Simon Schardt, Christopher
-Nauroth-Kreß and the various students who served as beta testers for
-this course. ## References {#references }</p>
+Nauroth-Kreß, Alexnder Leipold and the various students who served as
+beta testers for this course.</p>
+<h2 id="comments--">Comments:</h2>
+<h2 class="unnumbered" id="references-">References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-bezanson_julia_2012" class="csl-entry" role="listitem">
 Bezanson, Jeff, Stefan Karpinski, Viral B. Shah, and Alan Edelman. 2012.
@@ -392,6 +506,11 @@ Coleman, Chase, Spencer Lyon, Lilia Maliar, and Serguei Maliar. 2021.
 <span>What</span> to <span>Choose</span> in
 <span>Economics</span>?”</span> <em>Computational Economics</em> 58 (4):
 1263–88. <a href="https://doi.org/10.1007/s10614-020-09983-3">https://doi.org/10.1007/s10614-020-09983-3</a>.
+</div>
+<div id="ref-DanischKrumbiegel2021" class="csl-entry" role="listitem">
+Danisch, Simon, and Julius Krumbiegel. 2021. <span>“Makie.jl: Flexible
+High-Performance Data Visualization for Julia.”</span> <em>Journal of
+Open Source Software</em> 6 (65): 3349. <a href="https://doi.org/10.21105/joss.03349">https://doi.org/10.21105/joss.03349</a>.
 </div>
 <div id="ref-fernandes_new_2022" class="csl-entry" role="listitem">
 Fernandes, Pedro G. S., and David J. Mulryne. 2022. <span>“A New
