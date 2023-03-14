@@ -1,1 +1,1 @@
-Dict{String, Any}("starting_config" => "square", "cell_number" => 1024, "timesteps" => 200, "gridsize" => 200)
+Dict{String, Any}("starting_config" => "square", "cell_number" => 9, "timesteps" => 200, "gridsize" => 50)
