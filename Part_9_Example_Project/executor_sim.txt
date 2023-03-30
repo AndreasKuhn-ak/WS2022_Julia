@@ -1,0 +1,1 @@
+Dict{String, Any}("starting_config" => "circle", "cell_number" => 1009, "timesteps" => 1000, "gridsize" => 210)
