@@ -1,0 +1,28 @@
+General:
+remove output
+
+Julia_Notebooks
+Edit a cell: Not sure what you mean - does not work like that
+
+Short cuts: the reference is a bit dodgy - a lot of advertisement that has to be skipped and a lot of scrolling, maybe better use View->Activate Command Palette 
+
+3. Markdown language:
+strictly speakig, the text cell is not called markdown, but the "language" that yo use to write the content
+"Line breaks only with the enter key do not work reliable." What do you mean?
+
+the "guess the number" should have a noption of stopping it, if one is not in the mood for guessing
+
+6. Operators:
+"Operators in Julia are quite similar to mathematical operators:" - only the last three, not the first three
+
+in Julia, can + also be used fro concatenation, if so, that is not as in mathematics
+
+9. Multi-line statements
+<p style='text-align: justify;'> was not in the other text cells, should be consistent for all course noteooks
+
+
+Package_Install
+Description: Maybe a few words about why there are packages and what they are for? Why isn't everything just included?
+
+you are mixing 'using' and installing packages - maybe a word about the difference. Or an introductory sentence of why for the DataFrames, it needs to be installed.
+For the installing - do you need internet connection?
