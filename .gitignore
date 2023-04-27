@@ -2,6 +2,8 @@
 *.webm
 *.jld
 *.mkv
+*.ipynb_checkpoints
+*.md.backup
 
 
 
