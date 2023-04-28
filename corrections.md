@@ -30,7 +30,7 @@ For the installing - do you need internet connection?
 ### Datatypes
 3. str - Strings
 
-choose a different name for your example string in the text, currently, it is *string* and the function to turn something into a string, is also *string*
+choose a different name for your example string in the text, currently, it is *string* and the function to turn something into a string, is also *string*   :heavy_check_mark:
 
 4.1 Array
 the "ordered" in eth first sentencemight be confusing. In particular, since your example later on is [1,2,3,4,5,6] People might think, that the content is always ordered by value.
@@ -38,7 +38,16 @@ the "ordered" in eth first sentencemight be confusing. In particular, since your
 why could it be helpful to assign the type manually?
 
 Out of curiosity: Why is it important tha Julia calls things vectors or matrices? Isn't that an unnecessary level of complexity?
+
+- It not really important, its just Vector{} and Matrix{} are just aliases for Array(dim = 1){} resp. Array(dim = 2){} 
+
+
 Are 2D array restricted to Matrices, i.e. does each subarray have to have the same length?
+
+- 2D arrays have no subarrays in the sense of Python/numpy, where a 2D array is just a 1D array with 1D arrays as elements. They are a seperate datastructure where all columns and rows must have the same length and all elements the same type.  But its also possible to create arbitarily complex nested Vectors (1D-arrays) with subarrays/vector,... like in numpy. Then, there are no restrictions on size and types.   
+
+
+
 
 4.1.1 Array functions
 "the sum of all elements of an array (only works on `Int64` and `Float`)" what about int16 and int32?
