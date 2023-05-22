@@ -60,13 +60,20 @@ https://www.varsitytutors.com/hotmath/hotmath_help/topics/multiplying-vector-by-
 Was this just a random choice or do you know these pages - in particular, are they maintained well?
 
 Exercises:
-5. I woudl expect teh solution println(string2[2:2:end]) [x]
-9. The way the exercise was given, I would go for vcat, not append!. [vcat has not been introduced in the course]
-10. Expand this exercise by comparing the result between array4_2=array4 and array4_2=array4[:] to make the difference of copies clear. Maybe even better, put it in the main part. (I have sth about pass by reference and pass by value, later in the course. I think explicilty introducting this concept that early, would case a lot of confusion)
+5. I woudl expect teh solution println(string2[2:2:end]) 
+-   [x]
+9. The way the exercise was given, I would go for vcat, not append!. 
+-   [vcat has not been introduced in the course]
+10. Expand this exercise by comparing the result between array4_2=array4 and array4_2=array4[:] to make the difference of copies clear. Maybe even better, put it in the main part.
+-  (I have sth about pass by reference and pass by value, later in the course. I think explicilty introducting this concept that early, would cause a lot of confusion)
 18. this should be easy - it is in the lecture part
+-  this is an easy exercise ? or 
 15. solution: the dot is not needed because it is a vector
+- changed it
 19. solution: collect is not needed
+- added two solutions, one with collect, one without it
 21. As it stands, it should be easy - a possibility is in teh lecture part. Maybe modify to find two possibilities ... since one could use slicing or reverse()
+- the reverse slicing is only used for strings in the lecture. I guess this transfer of knowledge justifies the medium difficulty. Anyways, i added another solution with reverse()
 23. for the solution: 
 longArray=vcat(array1,array2,array3,array4,array4_2,array5,array6)
 count(3 .==longArray)
