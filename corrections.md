@@ -79,3 +79,4 @@ longArray=vcat(array1,array2,array3,array4,array4_2,array5,array6)
 count(3 .==longArray)
 or 
 count(i->(i==3),longArray) (I do not understand this syntax, but it is the first thing that comes up when using Google)
+- i added the solution with vcat and a disclaimer, that hard exercises might require googling 
