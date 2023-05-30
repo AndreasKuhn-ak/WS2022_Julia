@@ -30,24 +30,30 @@ output: pdf_document
 
 
 # Summary
-This course provides an introduction into scientific programming in ``Julia``. No previous knowledge is necessary to follow the nine course lectures. Every lecture contains one Jupyter Notebook.  Code examples are presented together with markdown cells explaining the shown code. Additionally, general concepts about programming in ``Julia`` are introduced. The lectures build on each other and should be finished in numerical order. The first five lectures cover the basic language syntax (e.g. data types, operators, package installation, functions, ...) of `Julia`. Whereas, the last four lectures are more narrowly targeted towards scientific applications and cover the topics: plotting, data import/export, data analysis and a simple agent-based simulation. Each lecture ends with exercises, which directly apply the learned concepts. Sample solutions for all exercises are provided. 
+This course provides an introduction into the scientific programming language `Julia`. No previous knowledge is necessary to follow the nine course lectures. Every lecture is presented in Jupyter Notebooks. Code examples are shown together with markdown cells explaining and elaborating the code. Additionally, general concepts about programming in `Julia` are introduced. The lectures build on each other and should be finished in numerical order. The first five lectures cover the basic language syntax (e.g. data types, operators, package installation, functions, ...) of `Julia`. Whereas, the last four lectures are more narrowly targeted towards scientific applications and cover the topics: plotting, import/export of numerical data, data analysis and a simple agent-based simulation. Each lecture ends with exercises, which directly apply the learned concepts. Sample solutions for all exercises are provided. 
 
 
 # Statement of Need 
 
-The `Julia` programming language first appeared in 2012 [@bezanson_julia_2012] and had been specifically designed for numerical computation and data science. The combination of speed and interactivity distinguish `Julia` from other languages in that realm. Since then, it has seen a rapidly growing adaptation in various fields of science. Ranging from black holes [@fernandes_new_2022] to quantum systems [@gawron_quantuminformationjljulia_2018; @kramer_quantumopticsjl_2018] in physics to applications in biology [@roesch_julia_2021; @knopp_mrirecojl_2021], economics [@coleman_matlab_2021], machine learning [@gao_julia_2020] and many more. This fast acceptance of a new programming language is quite remarkable, as programming languages are a field that is historically known to be very slow at pivoting (e.g. ``Python`` and ``C++`` are both over 30 years old). 
+The `Julia` programming language first appeared in 2012 [@bezanson_julia_2012] and had been specifically designed for numerical computation and data science. The combination of speed and interactivity distinguishes `Julia` from other languages in that realm. Since then, it has seen a rapidly growing adaptation in various fields of science. Ranging from black holes [@fernandes_new_2022] to quantum systems [@gawron_quantuminformationjljulia_2018; @kramer_quantumopticsjl_2018] in physics to applications in biology [@roesch_julia_2021; @knopp_mrirecojl_2021], economics [@coleman_matlab_2021], machine learning [@gao_julia_2020] and many more. This fast acceptance of a new programming language is quite remarkable, as programming languages are a field that is historically known to be very slow at pivoting (e.g. ``Python`` and ``C++`` are both over 30 years old). 
  
-One reason for this is that ``Julia`` solves the two language problem [@perkel_julia_2019] that has been tormenting many researchers for decades. It essentially means, that different specialized languages are used for different tasks on the same project. To give an example, ``Python`` or ``Matlab`` are often used for plotting and fast prototyping, ``R`` for statistical analyses and a compiled language like ``C/++`` or ``Fortran`` for the computational heavy parts. Using two or more languages in one project creates a lot of unnecessary overhead: Firstly, researcher have to spend more time learning to code in two languages (especially true for low level languages like ``C/++`` or ``Fortran``) and secondly, exchanging data and logic between languages can be very tedious and time-consuming.    
+One reason for this is that ``Julia`` solves the two language problem [@perkel_julia_2019] that has been tormenting many researchers for decades. It essentially means, that different specialized languages are used for different tasks in the same project. To give an example, ``Python`` or ``Matlab`` are often used for plotting and fast prototyping, ``R`` for statistical analyses and a compiled language like ``C/++`` or ``Fortran`` for the computational heavy parts. Using two or more languages in one project creates a lot of unnecessary overhead: Firstly, researcher have to spend more time learning to code in two languages (especially true for low level languages like ``C/++`` or ``Fortran``) and secondly exchanging data and logic between languages can be very tedious and time-consuming.    
 
 Julia solves this problem, as all the mentioned tasks can be accomplished in Julia alone. Its simple syntax is heavily inspired by Python, which allows equally fast prototyping [@andreaskuhn_how_2022]. The plotting package ``Makie`` [@DanischKrumbiegel2021] provides similar capabilities as ``matplotlib`` in ``Python`` or ``ggplot2`` in ``R``. The meta package ``StatsKit`` includes all necessary tools to do sophisticated statistical analysis. And most importantly, ``Julia`` is fast. Depending on the benchmark, ``Julia`` is on pair or within a factor of 2 to ``C`` [@al_julia_nodate; @churavy_bridging_2022]. 
 
 
-![](https://i.imgur.com/Fi8Acb1.png)
+![](Julia_all.png)
 
 
-Even though, there are already free Julia courses available online ([1](https://carpentries-incubator.github.io/julia-novice/),[2](https://www.datacamp.com/courses/introduction-to-julia),[3](https://juliaacademy.com/courses)), we believe, that this course offers additional value for (new) scientific programmers. 
 
-As it does not require any prior knowledge, is self-contained and build on one another, introduces many relevant topics in scientific programming and offers training exercises together with sample solutions to each lesson. 
+## Target audicence
+The main target audience of this course are scientists/students who want or are already using programming in their work. But no prerequisites are needed, therefore anybody can follow the course without problems. 
+
+Programmers who already have experience in other languages should be able to finish the first five lessons quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specific lessons should be very useful for them too.
+
+Even though, there are already free Julia courses available online ([1](https://carpentries-incubator.github.io/julia-novice/),[2](https://www.datacamp.com/courses/introduction-to-julia),[3](https://juliaacademy.com/courses)), we believe, that this course offers great additional value for (new) scientific programmers, as it does not require any prior knowledge, is self-contained, build on one another, introduces many relevant topics for scientific applications and offers exercises together with solutions to each chapter. 
+
+
 
 # Details of the course
 
@@ -56,7 +62,7 @@ As it does not require any prior knowledge, is self-contained and build on one a
 The learning resource aims to enable learners to:
 
 * use interactive notebooks 
-* understand the basic structure of a programming language
+* understand the basic structure of the `Julia` programming language
 * use Julia in a scientifc context:
     * import/export data
     * analyse data
@@ -75,7 +81,6 @@ The learning resource aims to enable learners to:
 9. Application: Simple Random Walk Simulation 
 
 
-
 ## Instructional design
 The Jupyter notebooks contain four different types of cells: 
 - General explanations
@@ -83,30 +88,31 @@ The Jupyter notebooks contain four different types of cells:
 - Exercises
 - Meta comments/hints/notes
 
-The first three cell types are essential in understanding the contents of the course. The exercises are divided into three difficulties: easy, medium and hard. Easy and medium exercises can be solved using the content of the course alone, whereas some hard exercises require additional research, to transfer the acquired knowledge to new problems.  The "meta" cells offer additional but non essential information. These, can be comments about the differences of Julia compared to other languages, advice on good coding practices,... . Whereas first time programmers can skip these cells if they want to, we expect the meta cells to be particularly useful for already experienced programmers switching to ``Julia``.
+The first three cell types are essential in understanding the contents of the course. The exercises are divided into three difficulties: easy, medium and hard. Easy and medium exercises can be solved using the content of the course alone, whereas some hard exercises require additional research, to transfer the acquired knowledge to new problems.  The "meta" cells offer additional but non-essential information. These, can be comments about the differences of Julia compared to other languages, advice on good coding practices,... . Whereas first time programmers can skip these cells if they want to, we expect the meta cells to be particularly useful for already experienced programmers switching to ``Julia``.
 
 
-## Target audicence
-The main target audience of this course are scientists who want or are already using programming in their work. But no prerequisites are needed, therefore anybody can follow the course without problems. 
-
-Programmers who already have experience in other languages should be able to finish the first five lession quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specifc lessons should be very useful for them too.
 
 # Experience of use
-We started using Julia in our own work out of frustation of the execution speed of raw Python. The choice of Julia compared to other compiled and fast languages like C/++, Fortran or Rust was easy, as Julia allowed us to keep the familar and convenient interactive development workflow that Python established. 
+We started using Julia in our own work out of frustration of the execution speed of raw Python. The choice of Julia compared to other compiled and fast languages like C/++, FORTRAN or Rust was easy, as Julia allowed us to keep the familiar and convenient interactive development workflow that Python established. 
 
-During the switch, we also had to learn Julia from scratch. And what is the best way to learn something new? Right, teaching it. Therefore, we developed this course with the original purpose to educate ourselves and new members of our group on Julia. Since the beginning  of 2022, eleven other people have completed the material as a self-study course. Furthermore, we have been providing the course material on our website as a free [download](https://www.biozentrum.uni-wuerzburg.de/cctb/research/supramolecular-and-cellular-simulations/) since March 2022. The feedback was used to iteratively improve the course over time. 
+During the switch, we also had to learn Julia from scratch. And what is the best way to learn something new? Right, teaching it. Therefore, we developed this course with the original purpose to educate ourselves and new members of our group on Julia. Since the beginning of 2022, eleven other people have completed the material as a self-study course. Furthermore, we have been providing the course material on our website as a free download since March 2022. The feedback was used to iteratively improve the course. 
 
-We believe that the course has reached a level of maturity and that it offers great value to everybody who wants to learn Julia. Next, we plan to host a training workshop in a research consortium. In addition, we are convinced that the course could be readily taught in a weekly manner as part of an undergraduate or graduate programme. Therefore, we invite everybody to use the course independently to learn or to teach Julia. 
+We believe that the course has reached a level of maturity so that it offers great value to everybody who wants to learn Julia. Next, we plan to host a training workshop in a research consortium. In addition, we are convinced that the course could be readily taught in a weekly manner as part of an undergraduate or graduate program. Therefore, we invite everybody to either use the course materials in idependent self study to learn `Julia` or to use the course materials to teach Julia. 
 
 # Get started -> later only in readme
 To run the course material on your local machine, clone this [github repository]( https://github.com/AndreasKuhn-ak/WS2022_Julia). The repository contains a file called "Julia_course_manual.pdf" which lists the required software and how to install it. 
 
-For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter nootebooks in your browser. Unfortunately this comes with some restrictions: Due the limited server capacities of mybinder, the container building phase can sometimes fail and the GPU accelerated plotting in the ninth part will not work. You should also keep in mind that your changes will only be saved as long as your browser session is active, but you can download the changed notebooks to your local machine. 
+For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter notebooks in your browser. Unfortunately this comes with some restrictions: Due the limited server capacities of mybinder, the container building phase can sometimes fail and the GPU accelerated plotting in the ninth part will not work. You should also keep in mind that your changes will only be saved as long as your browser session is active, but you can download the changed notebooks to your local machine. 
+
+# Community guidelines
+
+In case you want to contribute or found an error in this course, please open a github issue/pull request in the course repository. If you have  questions or other problems/issues feel free to write us a message in github or an email.  
+
 
 
 # Figures
 
-Figures can be included like this: ![Example figure.](Julia_all.png)
+
 
 
 ## <span style="color:red">To Dos:</span>
