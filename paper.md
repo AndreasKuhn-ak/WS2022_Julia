@@ -46,13 +46,14 @@ Julia solves this problem, as all the mentioned tasks can be accomplished in Jul
 
 
 
-## Target audicence
-The main target audience of this course are scientists/students who want or are already using programming in their work. But no prerequisites are needed, therefore anybody can follow the course without problems. 
+## Target audience 
+The main target audience of this course are scientists/students who want or are already using programming in their work. But no prerequisites apart from basic algebra and statistics (high school level) are needed. Anybody with that requirement should be able to follow the course without problems.
 
 Programmers who already have experience in other languages should be able to finish the first five lessons quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specific lessons should be very useful for them too.
 
 Even though, there are already free Julia courses available online ([1](https://carpentries-incubator.github.io/julia-novice/),[2](https://www.datacamp.com/courses/introduction-to-julia),[3](https://juliaacademy.com/courses)), we believe, that this course offers great additional value for (new) scientific programmers, as it does not require any prior knowledge, is self-contained, build on one another, introduces many relevant topics for scientific applications and offers exercises together with solutions to each chapter. 
 
+Therefore, we invite everybody to either use the course materials in idependent self study to learn `Julia` or to use the course materials to teach Julia to others. 
 
 
 # Details of the course
@@ -97,33 +98,7 @@ We started using Julia in our own work out of frustration of the execution speed
 
 During the switch, we also had to learn Julia from scratch. And what is the best way to learn something new? Right, teaching it. Therefore, we developed this course with the original purpose to educate ourselves and new members of our group on Julia. Since the beginning of 2022, eleven other people have completed the material as a self-study course. Furthermore, we have been providing the course material on our website as a free download since March 2022. The feedback was used to iteratively improve the course. 
 
-We believe that the course has reached a level of maturity so that it offers great value to everybody who wants to learn Julia. Next, we plan to host a training workshop in a research consortium. In addition, we are convinced that the course could be readily taught in a weekly manner as part of an undergraduate or graduate program. Therefore, we invite everybody to either use the course materials in idependent self study to learn `Julia` or to use the course materials to teach Julia. 
-
-# Get started -> later only in readme
-To run the course material on your local machine, clone this [github repository]( https://github.com/AndreasKuhn-ak/WS2022_Julia). The repository contains a file called "Julia_course_manual.pdf" which lists the required software and how to install it. 
-
-For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter notebooks in your browser. Unfortunately this comes with some restrictions: Due the limited server capacities of mybinder, the container building phase can sometimes fail and the GPU accelerated plotting in the ninth part will not work. You should also keep in mind that your changes will only be saved as long as your browser session is active, but you can download the changed notebooks to your local machine. 
-
-# Community guidelines
-
-In case you want to contribute or found an error in this course, please open a github issue/pull request in the course repository. If you have  questions or other problems/issues feel free to write us a message in github or an email.  
-
-
-
-# Figures
-
-
-
-
-## <span style="color:red">To Dos:</span>
-*  https://openjournals.readthedocs.io/en/jose/review_checklist.html Wir müssen sicher gehen, dass wir diese Aspekte alle abdecken
-* target audience 
-* https://jose.theoj.org/papers/10.21105/jose.00156 Artikel mit sehr ähnlichem Thema 
-* github repo mit documentation die das hier beinhaltet: https://jose.theoj.org/papers/10.21105/jose.00156
-* Kurs Korretur lesen, damit keine (möglichst wenige) Typos drin sind
-* sie betonen überall immer, dass sie gerne die Geschichte des Kurses im ARtikel lesen möchten - das sollte also irgendwo mit drin sein
-* adaptation from others
-* <span style="color:red">comunity notes: Anpassungen von anderen -> readme</span>
+We believe that the course has reached a level of maturity so that it offers great value to everybody who wants to learn Julia. Next, we plan to host a training workshop in a research consortium. In addition, we are convinced that the course could be readily taught in a weekly manner as part of an undergraduate or graduate program. Therefore, we invite everybody to either use the course materials in idependent self study to learn `Julia` or to use the course materials to teach Julia to others. 
 
 
 
@@ -132,6 +107,17 @@ In case you want to contribute or found an error in this course, please open a g
 We acknowledge contributions from Simon Schardt, Christopher Nauroth-Kreß, Alexander Leipold and the various other students who served as beta testers and proof readers for this course. 
 
 ## Comments: 
+
+# To Dos:
+
+- https://openjournals.readthedocs.io/en/jose/review_checklist.html Wir müssen sicher gehen, dass wir diese Aspekte alle abdecken
+- target audience [x]
+- https://jose.theoj.org/papers/10.21105/jose.00156 Artikel mit sehr ähnlichem Thema
+- github repo mit documentation die das hier beinhaltet: https://jose.theoj.org/papers/10.21105/jose.00156
+- Kurs Korretur lesen, damit keine (möglichst wenige) Typos drin sind [x] ich bin da durch 
+- sie betonen überall immer, dass sie gerne die Geschichte des Kurses im ARtikel lesen möchten - das sollte also  irgendwo mit drin sein [x] experience of use 
+- adaptation from others [x] inside experience of use
+- comunity notes: Anpassungen von anderen -> readme [x]
 
 
 
