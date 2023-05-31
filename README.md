@@ -71,18 +71,16 @@ The first three cell types are essential in understanding the contents of the co
 
 
 # Get started 
-To run the course material on your local machine, clone this [github repository]( https://github.com/AndreasKuhn-ak/WS2022_Julia). The repository contains a file called "Julia_course_manual.pdf" which lists the required software and how to install it. 
 
-For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter notebooks in your browser. Unfortunately this comes with some restrictions: Due the limited server capacities of mybinder, the container building phase can sometimes fail and the GPU accelerated plotting in the ninth part will not work. You should also keep in mind that your changes will only be saved as long as your browser session is active, but you can download the changed notebooks to your local machine. 
+To run the course material on your local machine, clone this [github repository]( https://github.com/AndreasKuhn-ak/WS2022_Julia). Download and install [Anaconda](https://www.anaconda.com/download#downloads) and [Julia](https://julialang.org/downloads/) for your operating system. Install the package [IJulia](https://datatofish.com/add-julia-to-jupyter/) with your local `Julia` installation. Now you can start using the Jupyter Notebooks of the course. Any additional packages used in the course are installed and introduced in the chapter packages with the integrated `Julia` packages manager.  
+ 
+For a first experience without any prior installation, you can also use [mybinder](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) to directly execute the Jupyter notebooks in your browser. Unfortunately, this comes with some restrictions: Due to the limited server capacities of mybinder, the container building phase can sometimes fail, and the GPU accelerated plotting in the ninth part will not work. You should also keep in mind that your changes will only be saved as long as your browser session is active, but you can download the changed notebooks to your local machine. 
 
 # Community guidelines
 
-In case you want to contribute or found an error in this course, please open a github issue/pull request in the course repository. If you have  questions or other problems/issues feel free to write us a message in github or an email.  
+In case you want to contribute or found an error in this course, please open a GitHub issue/pull request in the course repository. If you have questions or other problems/issues, feel free to write us a message in GitHub or an email.  
 
-
-
-
-
+We encourage you to give us anonymus feedback using this [google form](https://docs.google.com/forms/d/e/1FAIpQLSd_gyiwqzYNADm88PXT4Xp6JlDAt0rR5s_2jZUXE2cJJmCEqQ/viewform?usp=sf_link).  
 ## Acknowledgements
 
 We acknowledge contributions from Simon Schardt, Christopher Nauroth-Kreß and the various students who served as beta testers for this course. 
