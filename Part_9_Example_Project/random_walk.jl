@@ -7,6 +7,7 @@ function create_objects(Gridsize, Cell_number)
     return Grid, Cell_list
 end
 
+
 function populate_sys!(Grid, Cell_list, Starting_config,Gridsize, Cell_number) 
     if Starting_config == "random"
         i = 1
@@ -38,29 +39,6 @@ function populate_sys!(Grid, Cell_list, Starting_config,Gridsize, Cell_number)
             end
         end
     end
-    
-    if Starting_config == "circle"
-        #calculate integer radius of the circle that is closest to the cellnumber in area
-        # r = sqrt(A/pi))
-        radius = round(Int64,sqrt(Cell_number/π))
-        
-        #calculate center coordinates of the circle
-        X_mid = round(Int64,Gridsize/2)
-        Y_mid = round(Int64,Gridsize/2)
-        #all the rounding is needed to get to discrete grid points if gridsize is an odd number
-        i = 1
-        for x = -radius:radius
-            for y = -radius:radius
-                #test if [x,y] coordinates lay within the circle
-                if sqrt((x^2+y^2)) <= radius
-                    Grid[X_mid+x, Y_mid+y] = i
-                    push!(Cell_list,[X_mid+x, Y_mid+y])
-                    i += 1
-                end
-            end
-        end
-        Cell_number = i-1
-    end
     #return everything that could have changed
     return Grid, Cell_list, Cell_number
 end
@@ -87,23 +65,24 @@ function plot_sim(Cell_list, Gridsize)
     return Fig1, Ax1 , Scatty
 end
 
-function update_sys(Grid, Cell_list, Gridsize,Timesteps)
-    Cell_list_alltime =  Vector{Vector{Vector{Int64}}}(undef,0)           # super cell list which contains one cell_list per timestep 
-    mov_vec = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[-1,-1],[-1,1],[1,-1]]     #possible movement vectors to the next gridpoint
-    sequence_vec = collect(1:8)                                           # sequence_vec is used to acess the mov_vec
+
+function update_sys(Grid, Cell_list, Gridsize,Timesteps)                  # input arguments, are the starting configuration (Grid & Cell_list) and the gridsize and number of Timesteps
+    Cell_list_alltime =  Vector{Vector{Vector{Int64}}}(undef,0)           # super cell list which contains one cell_list per time step 
+    mov_vec = [[0,1],[0,-1],[1,0],[-1,0],[1,1],[-1,-1],[-1,1],[1,-1]]     # possible movement vectors to the next grid point
+    sequence_vec = collect(1:8)                                           # sequence_vec is used to access the mov_vec
     
     
-    Cell_list_copy = deepcopy(Cell_list)                                  # make real copy (no reference) of Cell_list and push it into cell_list altime 
+    Cell_list_copy = deepcopy(Cell_list)                                  # make real copy (no reference) of Cell_list and push it into cell_list_alltime 
     push!(Cell_list_alltime,Cell_list_copy)
-    for t = 1:Timesteps
-        for (j,Cell) in  enumerate(Cell_list)
-            shuffle!(sequence_vec)                                        # use shuffle function from random to esure random movement of particles
+    for t = 1:Timesteps                                                   #iterate over all timesteps
+        for (j,Cell) in  enumerate(Cell_list)                             #iterate over all cells
+            shuffle!(sequence_vec)                                        # use shuffle function from random to ensure random movement of particles
             for sque in sequence_vec
                 x_next = Cell[1] + mov_vec[sque][1]
                 y_next = Cell[2] + mov_vec[sque][2]
                 
-                if x_next >= 1 && x_next <= Gridsize && y_next >= 1 && y_next <= Gridsize    # check if gridpoint is out of bounds of grid
-                    if Grid[x_next,y_next] == 0 && Grid[Cell[1],Cell[2]] != 0                # check if target gridpoint is empty and sanity check if cell exists on previous gridpoint
+                if x_next >= 1 && x_next <= Gridsize && y_next >= 1 && y_next <= Gridsize    # check if grid point is out of bounds of grid
+                    if Grid[x_next,y_next] == 0 && Grid[Cell[1],Cell[2]] != 0                # check if target grid point is empty and sanity check if cell exists on previous grid point
                         Grid[Cell[1],Cell[2]] = 0 
                         Grid[x_next,y_next]  = j 
                         
@@ -111,14 +90,15 @@ function update_sys(Grid, Cell_list, Gridsize,Timesteps)
                         Cell[2] = y_next
                         break
                     end
-                end
-            end
+                end                                                                          
+            end                                                                              # if no grid points fullfils the condition the cell does not move
         end
         Cell_list_copy = deepcopy(Cell_list)                                   # creating copy of cell list in order to avoid a pass by refernce. 
         push!(Cell_list_alltime,Cell_list_copy)
     end
     return(Cell_list_alltime)
 end
+
 
 function update_sys_bias(Grid, Cell_list, Gridsize,Timesteps)
     Cell_list_alltime =  Vector{Vector{Vector{Int64}}}(undef,0)           # super cell list which contains one cell_list per timestep 
