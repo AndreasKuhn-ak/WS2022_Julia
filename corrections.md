@@ -1,5 +1,7 @@
 ### General:
-remove output
+remove cell with output
+make sure that if I made changes to the exercises in the main notebook, that its also changed in the solutions notebook 
+
 
 ### Julia_Notebooks
 Edit a cell: Not sure what you mean - does not work like that
@@ -81,3 +83,39 @@ Exercises
 3. why do a and g instead of f? That doesn't seem to add a new level?
 
 12. in der Aufgabe steht every OTHER point, bei deiner Lösung berechnest du aber auch die Distanz von dem Punkt zu sich selbst - das beeinflusst den Mean
+
+### Functions
+
+"Strings will be printed directly."
+Nicht nur strings - println(5) gibt 5 aus - ob als string, weiß ich nicht
+
+1.1 "You can also create the object in place" Das verstehe ich nicht. Kannst du das anders formulieren?
+
+Warum hast du denn mit der random Funktion angefangen. Kannst du das motivieren? Wenn ich zum ersten Mal programmiere, scheint das erstmal nicht wie eine besonders nützliche Funktion. Und dann kommt auch noch das Paket Random ...
+
+you use the words collection and iterable objects for seemingly the same thing. Can you put a comment somewhere what the two are?
+
+1.9 Weher do I find the default value of a keyword argument?
+
+2. "generic function with 1 method" explain what "method" means in this output and what is the #with the number?
+
+println(sort( ["bbb","aaaaaaaaa","cccccc"],by = x->length(x))) I remember that the arguments with anonymous functions where very tricky when I first encountered them. Maybe write in the cell below what exactly happens here: what does the x stand for , ...
+
+2.1.1. Map was also very tricky for me at the start. Maybe istead of collect use a specific array, e.g. [1,2,3,4]. Otherwise the collect distracts from the map
+
+"But the big advantage of the map function compared to the . notation is that you can define an anonymous function right in place."
+
+Stimmt so nicht:
+(x->x^3+x^2+x).(collect(1:10))
+geht genauso
+
+Schau nochmal nach ob . und Map nicht genau das gleiche machen - und dann solltest du nicht "Broadcasting" für das eine und "Map" für das andere als Beschreibung verwenden.
+
+2.4  "The only way, to make a local variable inside a function visible to the outside, is by returning its value and assigning it to a new variable."
+Are you sure, it is the only way? There seem sto be a way to make variables global: https://discourse.julialang.org/t/how-to-correctly-define-and-use-global-variables-in-the-module-in-julia/65720
+
+Maybe, just say "one way..."
+
+Exercises: 
+11 "Now you have a plot containing the measured data and the ground truth" that was not clear from the previous exercises
+ Solution 13: half of teh sentence is missing : "If you are confused about the complex if and elseif conditions  "
