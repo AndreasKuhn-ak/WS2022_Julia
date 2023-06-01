@@ -72,3 +72,12 @@ longArray=vcat(array1,array2,array3,array4,array4_2,array5,array6)
 count(3 .==longArray)
 or 
 count(i->(i==3),longArray) (I do not understand this syntax, but it is the first thing that comes up when using Google)
+
+### Conditional_Iterators
+I would start with an explanatory sentence about what Boolean expressions are
+Mention that the spaces are important, e.g. 5. > 2 requires spaces
+
+Exercises
+3. why do a and g instead of f? That doesn't seem to add a new level?
+
+12. in der Aufgabe steht every OTHER point, bei deiner Lösung berechnest du aber auch die Distanz von dem Punkt zu sich selbst - das beeinflusst den Mean
