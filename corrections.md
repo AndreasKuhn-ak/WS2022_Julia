@@ -119,3 +119,15 @@ Maybe, just say "one way..."
 Exercises: 
 11 "Now you have a plot containing the measured data and the ground truth" that was not clear from the previous exercises
  Solution 13: half of teh sentence is missing : "If you are confused about the complex if and elseif conditions  "
+ 
+### Plots
+3.
+die Label in den plots tauchen nihct auf: sinus, random, airplanes,...
+ach so, die Label sind für die Legend. Das ist aber vor 4. verwirrend was die machen
+
+das Wort axis ist etwas verwirrend - eigentlich meinst du coordinate system oder set of axes, aber weil das der Befehl ist, hast du singular verwendet 
+
+bei dem 3. Histogramm ist das graue Kästchen in der Legende nicht sinnvoll
+
+Exercises
+bei den Lösungen fehlen die y-Achsenbeschriftungen für die Histogramme
