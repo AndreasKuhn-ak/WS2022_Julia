@@ -131,3 +131,32 @@ bei dem 3. Histogramm ist das graue Kästchen in der Legende nicht sinnvoll
 
 Exercises
 bei den Lösungen fehlen die y-Achsenbeschriftungen für die Histogramme
+
+### File Management
+"As relative paths are always given in relation to the notebook path, the relative path to this notebook is just nothing."
+Da verstehe ich nicht was gemeint ist und auch nicht was der Unterschied zwischen
+readdir(path_notebook)  # absolute path 
+und
+readdir()              # relative path    
+ist.
+
+Ich würde JSON nicht unter "human readable" angeben. ich glaube nicht, dass das der Anspruch ist, sondern eher dass man damit Daten die nicht in ein csv Format passen gut zwischen Programmiersprachen austauschen kann.
+Unter "human readable" würde ich eine .csv Format verstehen
+
+Bei deinem Parsing-Problem kommst du jetzt genau bei JSON an, das du vorhar abgetan hast mit "one worse than the other" Diesen Kommentar solltest du nochmal überdenken und eher darauf eingehen wann welches Tools sinnvoll ist und wann nicht. 
+
+Wie du an meinen Kommentaren siehst solltest du die Storyline von Teil 7 nochmal überdenken. Für jemanden der noch nie programmiert hat, passt das vielleicht so. Aber wenn man aus einer anderen Sprache kommt, dann wundert man sich was du da machst.
+Meiner Meinung nach sind die wichtigen Punkte:
+- Schnelligkeit (Julia-Format)
+- Austausch von numerischen Daten zwischen Sprachen und human readable (csv)
+- Austausch von beliebigen Daten zwischen Sprachen und anschaubar, aber nicht wirklich human readable (JSON)
+
+Warum hast du nur hier eine short summary - das wäre bei den anderen Notebooks doch auch sinnvoll, oder?
+
+einheitliche Schreibweise: .csv oder csv, .jls or jls, ...
+
+bei Lösung 7 geht irgendwas schief -> ok, das war weil die .png noch drin war (das ist eine Sollbruchstelle, weil du genau aufpassen musst, dass du den ganzen Output gelöscht hast)
+
+so wie es im Moment ist, müsstest du aber dazu schreiben, dass man die Aufgaben genau in der Reihenfolge abarbeiten muss
+
+Die Idee vom Ampelsystem ist ja eigentlich, dass sich jeder die Aufgaben raussucht die er passend findet
