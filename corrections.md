@@ -1,5 +1,7 @@
 ### General:
-remove output
+remove cell with output
+make sure that if I made changes to the exercises in the main notebook, that its also changed in the solutions notebook 
+
 
 ### Julia_Notebooks
 Edit a cell: Not sure what you mean - does not work like that
@@ -60,23 +62,101 @@ https://www.varsitytutors.com/hotmath/hotmath_help/topics/multiplying-vector-by-
 Was this just a random choice or do you know these pages - in particular, are they maintained well?
 
 Exercises:
-5. I woudl expect teh solution println(string2[2:2:end]) 
--   [x]
-9. The way the exercise was given, I would go for vcat, not append!. 
--   [vcat has not been introduced in the course]
+5. I woudl expect teh solution println(string2[2:2:end])
+9. The way the exercise was given, I would go for vcat, not append!.
 10. Expand this exercise by comparing the result between array4_2=array4 and array4_2=array4[:] to make the difference of copies clear. Maybe even better, put it in the main part.
--  (I have sth about pass by reference and pass by value, later in the course. I think explicilty introducting this concept that early, would cause a lot of confusion)
 18. this should be easy - it is in the lecture part
--  this is an easy exercise ? or 
 15. solution: the dot is not needed because it is a vector
-- changed it
 19. solution: collect is not needed
-- added two solutions, one with collect, one without it
 21. As it stands, it should be easy - a possibility is in teh lecture part. Maybe modify to find two possibilities ... since one could use slicing or reverse()
-- the reverse slicing is only used for strings in the lecture. I guess this transfer of knowledge justifies the medium difficulty. Anyways, i added another solution with reverse()
 23. for the solution: 
 longArray=vcat(array1,array2,array3,array4,array4_2,array5,array6)
 count(3 .==longArray)
 or 
 count(i->(i==3),longArray) (I do not understand this syntax, but it is the first thing that comes up when using Google)
-- i added the solution with vcat and a disclaimer, that hard exercises might require googling 
+
+### Conditional_Iterators
+I would start with an explanatory sentence about what Boolean expressions are
+Mention that the spaces are important, e.g. 5. > 2 requires spaces
+
+Exercises
+3. why do a and g instead of f? That doesn't seem to add a new level?
+
+12. in der Aufgabe steht every OTHER point, bei deiner Lösung berechnest du aber auch die Distanz von dem Punkt zu sich selbst - das beeinflusst den Mean
+
+### Functions
+
+"Strings will be printed directly."
+Nicht nur strings - println(5) gibt 5 aus - ob als string, weiß ich nicht
+
+1.1 "You can also create the object in place" Das verstehe ich nicht. Kannst du das anders formulieren?
+
+Warum hast du denn mit der random Funktion angefangen. Kannst du das motivieren? Wenn ich zum ersten Mal programmiere, scheint das erstmal nicht wie eine besonders nützliche Funktion. Und dann kommt auch noch das Paket Random ...
+
+you use the words collection and iterable objects for seemingly the same thing. Can you put a comment somewhere what the two are?
+
+1.9 Weher do I find the default value of a keyword argument?
+
+2. "generic function with 1 method" explain what "method" means in this output and what is the #with the number?
+
+println(sort( ["bbb","aaaaaaaaa","cccccc"],by = x->length(x))) I remember that the arguments with anonymous functions where very tricky when I first encountered them. Maybe write in the cell below what exactly happens here: what does the x stand for , ...
+
+2.1.1. Map was also very tricky for me at the start. Maybe istead of collect use a specific array, e.g. [1,2,3,4]. Otherwise the collect distracts from the map
+
+"But the big advantage of the map function compared to the . notation is that you can define an anonymous function right in place."
+
+Stimmt so nicht:
+(x->x^3+x^2+x).(collect(1:10))
+geht genauso
+
+Schau nochmal nach ob . und Map nicht genau das gleiche machen - und dann solltest du nicht "Broadcasting" für das eine und "Map" für das andere als Beschreibung verwenden.
+
+2.4  "The only way, to make a local variable inside a function visible to the outside, is by returning its value and assigning it to a new variable."
+Are you sure, it is the only way? There seem sto be a way to make variables global: https://discourse.julialang.org/t/how-to-correctly-define-and-use-global-variables-in-the-module-in-julia/65720
+
+Maybe, just say "one way..."
+
+Exercises: 
+11 "Now you have a plot containing the measured data and the ground truth" that was not clear from the previous exercises
+ Solution 13: half of teh sentence is missing : "If you are confused about the complex if and elseif conditions  "
+ 
+### Plots
+3.
+die Label in den plots tauchen nihct auf: sinus, random, airplanes,...
+ach so, die Label sind für die Legend. Das ist aber vor 4. verwirrend was die machen
+
+das Wort axis ist etwas verwirrend - eigentlich meinst du coordinate system oder set of axes, aber weil das der Befehl ist, hast du singular verwendet 
+
+bei dem 3. Histogramm ist das graue Kästchen in der Legende nicht sinnvoll
+
+Exercises
+bei den Lösungen fehlen die y-Achsenbeschriftungen für die Histogramme
+
+### File Management
+"As relative paths are always given in relation to the notebook path, the relative path to this notebook is just nothing."
+Da verstehe ich nicht was gemeint ist und auch nicht was der Unterschied zwischen
+readdir(path_notebook)  # absolute path 
+und
+readdir()              # relative path    
+ist.
+
+Ich würde JSON nicht unter "human readable" angeben. ich glaube nicht, dass das der Anspruch ist, sondern eher dass man damit Daten die nicht in ein csv Format passen gut zwischen Programmiersprachen austauschen kann.
+Unter "human readable" würde ich eine .csv Format verstehen
+
+Bei deinem Parsing-Problem kommst du jetzt genau bei JSON an, das du vorhar abgetan hast mit "one worse than the other" Diesen Kommentar solltest du nochmal überdenken und eher darauf eingehen wann welches Tools sinnvoll ist und wann nicht. 
+
+Wie du an meinen Kommentaren siehst solltest du die Storyline von Teil 7 nochmal überdenken. Für jemanden der noch nie programmiert hat, passt das vielleicht so. Aber wenn man aus einer anderen Sprache kommt, dann wundert man sich was du da machst.
+Meiner Meinung nach sind die wichtigen Punkte:
+- Schnelligkeit (Julia-Format)
+- Austausch von numerischen Daten zwischen Sprachen und human readable (csv)
+- Austausch von beliebigen Daten zwischen Sprachen und anschaubar, aber nicht wirklich human readable (JSON)
+
+Warum hast du nur hier eine short summary - das wäre bei den anderen Notebooks doch auch sinnvoll, oder?
+
+einheitliche Schreibweise: .csv oder csv, .jls or jls, ...
+
+bei Lösung 7 geht irgendwas schief -> ok, das war weil die .png noch drin war (das ist eine Sollbruchstelle, weil du genau aufpassen musst, dass du den ganzen Output gelöscht hast)
+
+so wie es im Moment ist, müsstest du aber dazu schreiben, dass man die Aufgaben genau in der Reihenfolge abarbeiten muss
+
+Die Idee vom Ampelsystem ist ja eigentlich, dass sich jeder die Aufgaben raussucht die er passend findet
