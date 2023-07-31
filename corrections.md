@@ -160,3 +160,57 @@ bei Lösung 7 geht irgendwas schief -> ok, das war weil die .png noch drin war (
 so wie es im Moment ist, müsstest du aber dazu schreiben, dass man die Aufgaben genau in der Reihenfolge abarbeiten muss
 
 Die Idee vom Ampelsystem ist ja eigentlich, dass sich jeder die Aufgaben raussucht die er passend findet
+
+### Data analysis
+Make clear early on what you want to do with the data set. I am now at 3. and still don't know what you are getting at. 
+Maybe present the aim and the necessary steps to get there
+
+Also, as it stands, I would ask why did you use a data set with weird labels for teaching. You could also just provide the data in a format that can be used directly for data analysis. Why do you have german labels in an english course?
+
+2. Chained operations
+
+"However, if you use different macros in your own coding, you should always make sure you know what they are doing." Das gilt doch ganz allgemein für eigenen Code, dass man wissen sollte was er macht?
+
+Kannst du noch ein einfaches Beispiel für @chain hinzufügen? So ganz ist mir das noch nicht klar
+
+"never use Strings as column names" - so why do you have them in your example?
+
+3. Cleaning and structuring data
+Explain the ":" in the labels
+
+was sind "getter function"? 
+ was ist der Unterschied zwischen day und day of month?
+ 
+Woher weiß ich denn, dass 2022 incomplete ist? Das müsste ich doch erstmal anschauen 
+
+data.monthday = string.(data.monthday) maybe make a comment to remind people what the  . after string means
+
+4.
+Warum steht das hier noch da: #xticks = (194, string.(data.year)[1:10*365:nrow(data)] ))
+
+ With the help of some googling ...
+ Der Link führt auf eine deutschsprachige Webseite. Das ist hier nicht so sinnvoll. AUßerdem ist auch nicht klar wie zuverlässig die Informationen auf dieser Seite sind.
+ 
+Die Wikipediaseite ist auch Deutsch und auf der englischen gibt es leider kein Klimadiagramm
+
+5.
+beim Plot avreage Temperatur fehlt die Beschriftung der x-Achse. Bei den Plots vorher streng genommen auch. 
+
+beim durchschnittlich heißesten und kältesten Tag fehlt die Legende für die Farben; und wäre eine schönere Darstellung für das Datum möglich?
+
+"The on average coldest and warmest days do not all line up next to each other" Was meinst du damit?
+
+Beim heißesten udn kältestend Tag fehlt die Legende für die Farben
+Genauso bei Delta Temp per day
+
+stelle sicher, dass du data frame/dataframe/dataFrame und data set/dataset immer gleich schreibst
+
+Solution 7
+ "significant variance" significant kannst du nur hinschreiben, wenn du das gezeigt hast z.B. durch Hypothesentest. Es ist kein Synonym für groß.
+ 
+Solution 9
+"This simple analysis reveals no significant difference between leap and normal years in..."
+auch hier wieder significant 
+ 
+ Was ist dieses Notebook: Julia_Data_Analysis_exercise_solutions
+
