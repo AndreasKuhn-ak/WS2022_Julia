@@ -214,3 +214,36 @@ auch hier wieder significant
  
  Was ist dieses Notebook: Julia_Data_Analysis_exercise_solutions
 
+### Example Project
+"Note: The undef keyword"
+Warum diese Notiz. Das Keyword ist gar nicht aufgekommen
+
+achet darauf, dass grid point/gridpoint immer einheitlich geschrieben ist
+
+in function Plot_sim ist ein Kommentar "## explain better"?
+
+Grid_visu_3.png und Grid_visu_4.png: hier sollet in der Legende der grün-gestrichelte Pfeil nicht mehr auftauchen
+
+function update_sys:
+Vielleicht solltest du noch sagen was am Rand des grids passiert 
+
+neighbor oder neighbour einheitlich schreiben
+ 
+den Link https://stackoverflow.com/questions/38936868/in-julia-functions-passed-by-reference-or-value finde ich nicht besonders hilfreich, wenn man der Ausdruck noch nie gesehen hat.
+
+fig2 und fig3 haben noch startconfig als Label, zeigen aber den letzten Zeitpunkt
+
+10.7
+
+"comment: ... But in this case, it serves other purposes and sh:" Was ist sh?
+
+Ist es wirklich wichtig und sinnvoll die Agenten "cells" zu nennen?
+In manchen Forschungsbereichen werden die Gridpukte auch geren cell genannt und Leute aus diesem Bereich könnte das sehr verwirren.
+
+Exercise 1: was meinst du mit small und large system? die Gittergröße oder die Anzahl der Agenten?
+
+Exercise 8: in random_walk.jl in der Funktion populate_sys!() fehlt die Option für den Kreis
+
+Exercise 9: so schlimm sieht die doch gar nicht aus. Nach der ganzen Vorarbeit sind das ja nur noch ein paar Zeilen.
+
+Warum gibt es ein extra Notebook executor? Kann das nicht zu den Lösungen mit dazu?
