@@ -78,59 +78,92 @@ count(i->(i==3),longArray) (I do not understand this syntax, but it is the first
 ### Conditional_Iterators
 I would start with an explanatory sentence about what Boolean expressions are
 Mention that the spaces are important, e.g. 5. > 2 requires spaces
+    - normally there are no spaces required the case 5.>2 is a special case, as without space julia interprets this as the vectorized bigger operator and with space as 5.0 > 2 for 5.0>2 it does not matter if there are spaces 
 
 Exercises
 3. why do a and g instead of f? That doesn't seem to add a new level?
+- i wrote a nice compact version with a loop, students could be inspired by that, or maybe come up with it themselves, will added a hint in the description 
 
 12. in der Aufgabe steht every OTHER point, bei deiner Lösung berechnest du aber auch die Distanz von dem Punkt zu sich selbst - das beeinflusst den Mean
+- hab ich mit einer extra if conditon in der lösung angepasst
 
 ### Functions
 
 "Strings will be printed directly."
 Nicht nur strings - println(5) gibt 5 aus - ob als string, weiß ich nicht
+- hab ich angepasst und um nummers erweitert
 
 1.1 "You can also create the object in place" Das verstehe ich nicht. Kannst du das anders formulieren?
+-hab ich angepasst
 
 Warum hast du denn mit der random Funktion angefangen. Kannst du das motivieren? Wenn ich zum ersten Mal programmiere, scheint das erstmal nicht wie eine besonders nützliche Funktion. Und dann kommt auch noch das Paket Random ...
+- ich habs bissle was dazu geschrieben, dass es ein gutes beispiel für functions in general ist, da es sehr viele generelle functions concepte mit rand() abgedeckt werden
+
+- added something why random is important in programming
 
 you use the words collection and iterable objects for seemingly the same thing. Can you put a comment somewhere what the two are?
+- wird schon im datentypes und conditonal iterators spezifiziert. Hab hier nochmal genau draufgeachtet, dass ich die nicht ausstauschbar verwendet werden, sondern nur das jeweils richtige object
 
 1.9 Weher do I find the default value of a keyword argument?
+- with ? or offical docs, hab ich ergänzt
 
 2. "generic function with 1 method" explain what "method" means in this output and what is the #with the number?
+- puh ich glaub das würde ich weglassen, weil das sonst schnell viel zu kompliziert wird.
+- dahinter steht das key feature von julia multiple dispatch, das functions abhäning von ihren input argumenten verschiedene dinge tun können
+- also z.b. das rand() einen float returned aber rand(1:10) einem Int usw... obwohl das der gleiche functionsname ist
 
 println(sort( ["bbb","aaaaaaaaa","cccccc"],by = x->length(x))) I remember that the arguments with anonymous functions where very tricky when I first encountered them. Maybe write in the cell below what exactly happens here: what does the x stand for , ...
+- i added some explanations 
+
 
 2.1.1. Map was also very tricky for me at the start. Maybe istead of collect use a specific array, e.g. [1,2,3,4]. Otherwise the collect distracts from the map
+- changed that
 
 "But the big advantage of the map function compared to the . notation is that you can define an anonymous function right in place."
 
 Stimmt so nicht:
 (x->x^3+x^2+x).(collect(1:10))
 geht genauso
+- Hab ich angepasst, 
 
 Schau nochmal nach ob . und Map nicht genau das gleiche machen - und dann solltest du nicht "Broadcasting" für das eine und "Map" für das andere als Beschreibung verwenden.
+- tasächlich machen sie nicht genau das gleiche aber fast, wird dann ziemlich technisch... werd ich erstmal weglassen
 
 2.4  "The only way, to make a local variable inside a function visible to the outside, is by returning its value and assigning it to a new variable."
 Are you sure, it is the only way? There seem sto be a way to make variables global: https://discourse.julialang.org/t/how-to-correctly-define-and-use-global-variables-in-the-module-in-julia/65720
 
 Maybe, just say "one way..."
+- Sorry fürs klugscheißen, aber mein originales statment ist richtig, hier wird nur gezeigt, wie man globale variablen in einer functiona aufruft, ohne sie als parameter zu übergeben (was man btw nie tun sollte)
 
 Exercises: 
 11 "Now you have a plot containing the measured data and the ground truth" that was not clear from the previous exercises
- Solution 13: half of teh sentence is missing : "If you are confused about the complex if and elseif conditions  "
+- hab die vorherige augabe angepasst
+
+
+ Solution 13: half of the sentence is missing : "If you are confused about the complex if and elseif conditions  "
+
+- hab angepasst
+
+ 
+
+
  
 ### Plots
 3.
 die Label in den plots tauchen nihct auf: sinus, random, airplanes,...
 ach so, die Label sind für die Legend. Das ist aber vor 4. verwirrend was die machen
+- hab ich angepasst, und erst die labels eingeführt wenn sie auch direkt verwendet werden
 
 das Wort axis ist etwas verwirrend - eigentlich meinst du coordinate system oder set of axes, aber weil das der Befehl ist, hast du singular verwendet 
+- hab ich einen kommentar zu geschrieben, wie axis zu verstehen ist
 
 bei dem 3. Histogramm ist das graue Kästchen in der Legende nicht sinnvoll
+- ist weg
 
 Exercises
 bei den Lösungen fehlen die y-Achsenbeschriftungen für die Histogramme
+- ist angepasst
+
 
 ### File Management
 "As relative paths are always given in relation to the notebook path, the relative path to this notebook is just nothing."
@@ -139,6 +172,8 @@ readdir(path_notebook)  # absolute path
 und
 readdir()              # relative path    
 ist.
+
+- hab ich etwas weiter ausgeführt, hoffe das ist nun besser zu verstehen 
 
 Ich würde JSON nicht unter "human readable" angeben. ich glaube nicht, dass das der Anspruch ist, sondern eher dass man damit Daten die nicht in ein csv Format passen gut zwischen Programmiersprachen austauschen kann.
 Unter "human readable" würde ich eine .csv Format verstehen
