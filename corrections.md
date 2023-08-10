@@ -175,16 +175,25 @@ ist.
 
 - hab ich etwas weiter ausgeführt, hoffe das ist nun besser zu verstehen 
 
+
 Ich würde JSON nicht unter "human readable" angeben. ich glaube nicht, dass das der Anspruch ist, sondern eher dass man damit Daten die nicht in ein csv Format passen gut zwischen Programmiersprachen austauschen kann.
 Unter "human readable" würde ich eine .csv Format verstehen
 
-Bei deinem Parsing-Problem kommst du jetzt genau bei JSON an, das du vorhar abgetan hast mit "one worse than the other" Diesen Kommentar solltest du nochmal überdenken und eher darauf eingehen wann welches Tools sinnvoll ist und wann nicht. 
+- da würde ich wiedersprechen, da JSON ja einfach text datein sind, wenn da eine klasseobject/struct oder was anderen komplexes an datentypen drin ist, kann man das zwar nicht sonderlich schön lesen aber man kann. Und viel besser ist es im source code auch nicht 
+
+Bei deinem Parsing-Problem kommst du jetzt genau bei JSON an, das du vorhar abgetan hast mit "one worse than the other" Diesen Kommentar solltest du nochmal überdenken und eher darauf eingehen wann welches Tools sinnvoll ist und wann nicht.
+
+- Ja hab ich abgeändert. Hab zu beginn kurz was gesagt, dass JSON und BSON ihren Platz haben und dann später nicht mehr erwähnt
+
 
 Wie du an meinen Kommentaren siehst solltest du die Storyline von Teil 7 nochmal überdenken. Für jemanden der noch nie programmiert hat, passt das vielleicht so. Aber wenn man aus einer anderen Sprache kommt, dann wundert man sich was du da machst.
 Meiner Meinung nach sind die wichtigen Punkte:
 - Schnelligkeit (Julia-Format)
 - Austausch von numerischen Daten zwischen Sprachen und human readable (csv)
 - Austausch von beliebigen Daten zwischen Sprachen und anschaubar, aber nicht wirklich human readable (JSON)
+
+- Hab ich geändert und angepasst 
+
 
 Warum hast du nur hier eine short summary - das wäre bei den anderen Notebooks doch auch sinnvoll, oder?
 
@@ -194,7 +203,14 @@ bei Lösung 7 geht irgendwas schief -> ok, das war weil die .png noch drin war (
 
 so wie es im Moment ist, müsstest du aber dazu schreiben, dass man die Aufgaben genau in der Reihenfolge abarbeiten muss
 
+- ich denke bei den spezifischen aufgaben ist das relativ klar, da die genau aufeinandern aufbauen, da macht es wenig sinn, dass man die in beliebiger reihnfolge abarbeitet 
+
+
 Die Idee vom Ampelsystem ist ja eigentlich, dass sich jeder die Aufgaben raussucht die er passend findet
+
+- das hatte ich nie so im sinne, es gibt in mehrer teilen, aufgaben die aufeinadern aufbauen
+- für mich sind das nur schwierigkeitsmarker und ganz grob ist die schwierigkeite einfach mit der aufgabennummber ansteigend. 
+
 
 ### Data analysis
 Make clear early on what you want to do with the data set. I am now at 3. and still don't know what you are getting at. 
@@ -205,40 +221,67 @@ Also, as it stands, I would ask why did you use a data set with weird labels for
 2. Chained operations
 
 "However, if you use different macros in your own coding, you should always make sure you know what they are doing." Das gilt doch ganz allgemein für eigenen Code, dass man wissen sollte was er macht?
+- naja macros sind hier halt ein gewisser sonderfall, weil sie kein klar definietes verhalten haben
+- sie können wie functionen funktionieren aber halt auch deutlich mehr, wie eigenen code zur runtime generieren , oder den global state ändern ,....
+
 
 Kannst du noch ein einfaches Beispiel für @chain hinzufügen? So ganz ist mir das noch nicht klar
+- jo hab ich hinzugefügt, obs einfach ist musst du entscheiden :)
 
 "never use Strings as column names" - so why do you have them in your example?
+- changed that
 
 3. Cleaning and structuring data
 Explain the ":" in the labels
 
 was sind "getter function"? 
  was ist der Unterschied zwischen day und day of month?
+ - hab ich angepasst
  
 Woher weiß ich denn, dass 2022 incomplete ist? Das müsste ich doch erstmal anschauen 
+- es wird ja immer das ende das dataframes angezeigt, und da sieht man ja das 2022 im februar aufhört, aber hab ich weiter oben auch nochmal gesondert erwähnt
 
 data.monthday = string.(data.monthday) maybe make a comment to remind people what the  . after string means
+- naja elementwise halt, denke das sollte mittlerweile klar sein
+- ich hab auch im part vorher einen comment dazu, dass . mehrere bedeutungen haben kann
 
 4.
 Warum steht das hier noch da: #xticks = (194, string.(data.year)[1:10*365:nrow(data)] ))
+- ist weg 
 
  With the help of some googling ...
  Der Link führt auf eine deutschsprachige Webseite. Das ist hier nicht so sinnvoll. AUßerdem ist auch nicht klar wie zuverlässig die Informationen auf dieser Seite sind.
+ - hab ich auf ne english seite geändert
  
 Die Wikipediaseite ist auch Deutsch und auf der englischen gibt es leider kein Klimadiagramm
-
+- damit müssen die studenten wohl leben, geht ja nur um das diagramm
+- hab jetzt aber eine warnung vorwegstellt, dass das eine deutsche seite ist
 5.
 beim Plot avreage Temperatur fehlt die Beschriftung der x-Achse. Bei den Plots vorher streng genommen auch. 
+- hab ich geändert
 
 beim durchschnittlich heißesten und kältesten Tag fehlt die Legende für die Farben; und wäre eine schönere Darstellung für das Datum möglich?
+
+
+- eine vernüftige colorlegend gibts in makie nicht, müsste ich selber schreiben
+- könnte auch die colormap weglassen 
+
+
 
 "The on average coldest and warmest days do not all line up next to each other" Was meinst du damit?
 
 Beim heißesten udn kältestend Tag fehlt die Legende für die Farben
 Genauso bei Delta Temp per day
 
+
+
+
+
+
 stelle sicher, dass du data frame/dataframe/dataFrame und data set/dataset immer gleich schreibst
+
+
+
 
 Solution 7
  "significant variance" significant kannst du nur hinschreiben, wenn du das gezeigt hast z.B. durch Hypothesentest. Es ist kein Synonym für groß.
