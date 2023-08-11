@@ -39,6 +39,31 @@ function populate_sys!(Grid, Cell_list, Starting_config,Gridsize, Cell_number)
             end
         end
     end
+
+    if Starting_config == "circle"
+        #calculate approximate radius of circle of cells
+        r = round(Int64,sqrt(Cell_number/4π))
+        # round cell_number to closest square number
+        
+        #calculate center of circle on grid
+        X_center = round(Int64,Gridsize/2)
+        Y_center = round(Int64,Gridsize/2)
+        #all the rounding is needed to get to discrete grid points
+        i = 1
+        for x = -r:r
+            for y = -r:r
+                # condition that ensures that point is within a circle with radius r
+                if sqrt(x^2+y^2)<= r
+                    if Grid[X_center+x, Y_center+y] == 0 
+                        Grid[X_center+x, Y_center+y] = i
+                        push!(Cell_list,[X_center+x,Y_center+y])
+                        i += 1
+                    end
+                end
+            end
+        end
+        Cell_number = i
+    end
     #return everything that could have changed
     return Grid, Cell_list, Cell_number
 end
