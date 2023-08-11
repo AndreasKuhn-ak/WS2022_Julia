@@ -264,8 +264,8 @@ beim durchschnittlich heißesten und kältesten Tag fehlt die Legende für die F
 
 
 - eine vernüftige colorlegend gibts in makie nicht, müsste ich selber schreiben
-- könnte auch die colormap weglassen 
-- lass die colomap weg, macht die plots eh nicht wirklich besser
+
+- ich lass die colomap weg, macht die plots eh nicht wirklich besser
 
 
 
