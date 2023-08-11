@@ -265,6 +265,7 @@ beim durchschnittlich heißesten und kältesten Tag fehlt die Legende für die F
 
 - eine vernüftige colorlegend gibts in makie nicht, müsste ich selber schreiben
 - könnte auch die colormap weglassen 
+- lass die colomap weg, macht die plots eh nicht wirklich besser
 
 
 
@@ -272,25 +273,25 @@ beim durchschnittlich heißesten und kältesten Tag fehlt die Legende für die F
 
 Beim heißesten udn kältestend Tag fehlt die Legende für die Farben
 Genauso bei Delta Temp per day
-
-
-
-
+- hab ich angepasst
 
 
 stelle sicher, dass du data frame/dataframe/dataFrame und data set/dataset immer gleich schreibst
+- ist angepasst
 
 
 
 
 Solution 7
  "significant variance" significant kannst du nur hinschreiben, wenn du das gezeigt hast z.B. durch Hypothesentest. Es ist kein Synonym für groß.
+ - ist geändert 
  
 Solution 9
 "This simple analysis reveals no significant difference between leap and normal years in..."
 auch hier wieder significant 
- 
+  - ist geändert
  Was ist dieses Notebook: Julia_Data_Analysis_exercise_solutions
+  - ist gelöscht, waren meine ersten lösungen 
 
 ### Example Project
 "Note: The undef keyword"
