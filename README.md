@@ -27,7 +27,7 @@ Julia solves this problem, as all the mentioned tasks can be accomplished in Jul
 
 
 
-![](Julia_all.png)
+![](Julia_all_new.png)
 
 
 
