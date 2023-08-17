@@ -1,1 +1,0 @@
-Dict{String, Any}("starting_config" => "circle", "cell_number" => 254, "timesteps" => 1000, "gridsize" => 210)

@@ -1,1 +1,0 @@
-Dict{String, Any}("starting_config" => "random", "cell_number" => 1000, "timesteps" => 5000, "gridsize" => 1000)
