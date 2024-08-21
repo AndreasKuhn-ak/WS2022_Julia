@@ -35,11 +35,13 @@ Julia solves this problem, as all the mentioned tasks can be accomplished in Jul
 ## Target audience 
 The main target audience of this course is scientists/students who want to use or already use programming in their work. However, no prerequisites apart from basic algebra and statistics (high school level) are needed. Anybody with that requirement should be able to follow the course without problems.
 
-Programmers who already have experience in other languages should be able to finish the first five lessons quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specific lessons should be very useful for them, too.
+Intermediate Programmers who already have experience in other languages should be able to finish the first five lessons quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specific lessons should be very useful for them, too.
+
+Advanced Programmers who are interested in `Julia` should solely focus on the parts of the last four `Julia` specific lessons that are of interest to them.  
 
 Even though there are already free Julia courses available online ([1](https://carpentries-incubator.github.io/julia-novice/),[2](https://www.datacamp.com/courses/introduction-to-julia),[3](https://juliaacademy.com/courses)), we believe, that this course offers great additional value for (new) scientific programmers, as it does not require any prior knowledge, is self-contained with chapters that build up on one another, introduces many relevant topics for scientific applications and offers exercises together with solutions to each chapter. 
 
-Therefore, we invite everybody to either use the course materials in idependent self study to learn `Julia` or to use the course materials to teach Julia to others. 
+Therefore, we invite everybody to either use the course materials in independent self study to learn `Julia` or to use the course materials to teach Julia to others. 
 
 
 # Details of the course
@@ -89,7 +91,7 @@ In case you want to contribute or found an error in this course, please open a G
 We encourage you to give us anonymus feedback using this [google form](https://docs.google.com/forms/d/e/1FAIpQLSd_gyiwqzYNADm88PXT4Xp6JlDAt0rR5s_2jZUXE2cJJmCEqQ/viewform?usp=sf_link).  
 ## Acknowledgements
 
-We acknowledge contributions from Simon Schardt, Christopher Nauroth-Kreß and the various students who served as beta testers for this course. 
+We acknowledge the  contributions from Simon Schardt, Christopher Nauroth-Kreß, Alexander Leipold, Kilan Volmer and the various other students who served as beta testers and proof readers for this course. 
 ## License
 
 

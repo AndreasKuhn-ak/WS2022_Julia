@@ -49,11 +49,13 @@ Julia solves this problem, as all the mentioned tasks can be accomplished in Jul
 ## Target audience 
 The main target audience of this course is scientists/students who want to use or already use programming in their work. However, no prerequisites apart from basic algebra and statistics (high school level) are needed. Anybody with that requirement should be able to follow the course without problems.
 
-Programmers who already have experience in other languages should be able to finish the first five lessons quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specific lessons should be very useful for them, too.
+Intermediate Programmers who already have experience in other languages should be able to finish the first five lessons quite fast, as a lot of general programming concepts are introduced there as well. But the last four more `Julia` specific lessons should be very useful for them, too.
+
+Advanced Programmers who are interested in `Julia` should solely focus on the parts of the last four `Julia` specific lessons that are of interest to them.  
 
 Even though there are already free Julia courses available online ([1](https://carpentries-incubator.github.io/julia-novice/),[2](https://www.datacamp.com/courses/introduction-to-julia),[3](https://juliaacademy.com/courses)), we believe, that this course offers great additional value for (new) scientific programmers, as it does not require any prior knowledge, is self-contained with chapters that build up on one another, introduces many relevant topics for scientific applications and offers exercises together with solutions to each chapter. 
 
-Therefore, we invite everybody to either use the course materials in idependent self study to learn `Julia` or to use the course materials to teach Julia to others. 
+Therefore, we invite everybody to either use the course materials in independent self study to learn `Julia` or to use the course materials to teach Julia to others. 
 
 
 # Details of the course
@@ -98,15 +100,17 @@ The first three cell types are essential in understanding the contents of the co
 # Experience of use
 We started using `Julia` in our own work out of frustration with the execution speed of raw Python. The choice of `Julia` over other compiled and fast languages like C/++, FORTRAN or Rust was easy for us because ``Julia`` allowed us to keep the familiar and convenient interactive development workflow that Python established. 
 
-During the transition, we also had to learn `Julia` from scratch. And what is the best way to learn something new? Right, teaching it. Therefore, we developed this course to educate ourselves and new members of our group on ``Julia``. Since the beginning of 2022, thirteen other people have completed the material as a self-study course. Furthermore, we have been providing the course material on our website as a free download since March 2022. The feedback was used to iteratively improve the course. 
+During the transition, we also had to learn `Julia` from scratch. And what is the best way to learn something new? Right, teaching it. Therefore, we developed this course to educate ourselves and new members of our group on ``Julia``. Since the beginning of 2022, fifteen undergrad and master students have completed the material as a self-study course. Furthermore, we have been providing the course material on our website as a free download since March 2022. The feedback was used to iteratively improve the course. 
 
-We believe that the course has reached a level of maturity so that it offers great value to everybody who wants to learn or teach `Julia`. We are convinced that the course could be readily taught in a weekly manner as part of an undergraduate or graduate program. Therefore, we invite everybody to either use the course materials in independent self study to learn `Julia` or to use the course materials to teach `Julia` to others. 
+We believe that the course has reached a level of maturity so that it offers great value to everybody who wants to learn or teach `Julia`. We are convinced that the course could be readily taught  as part of an undergraduate or graduate program. A suitable format would be a block course where, in the morning, there is a teaching block of one or two lessons (depending on the size), and in the afternoon, students work alone or in groups on the exercises. In the evening or the next day, there could be a session where the solutions to the exercises are presented, and any questions regarding the exercises are answered. 
+
+Therefore, we invite everybody to either use the course materials in independent self study to learn `Julia` or to use the course materials to teach `Julia` to others. 
 
 
 
 ## Acknowledgements
 
-We acknowledge contributions from Simon Schardt, Christopher Nauroth-Kreß, Alexander Leipold and the various other students who served as beta testers and proof readers for this course. 
+We acknowledge the  contributions from Simon Schardt, Christopher Nauroth-Kreß, Alexander Leipold, Kilan Volmer and the various other students who served as beta testers and proof readers for this course. 
 
 
 

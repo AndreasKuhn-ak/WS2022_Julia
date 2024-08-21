@@ -1,0 +1,1 @@
+Dict{String, Any}("starting_config" => "square", "timesteps" => 200, "particle_number" => 1024, "gridsize" => 200)
