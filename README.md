@@ -1,5 +1,6 @@
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/) [![DOI](https://zenodo.org/badge/542170636.svg)](https://doi.org/10.5281/zenodo.20613017)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndreasKuhn-ak/WS2022_Julia/HEAD) [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/) 
+[![DOI](https://zenodo.org/badge/542170636.svg)](https://doi.org/10.5281/zenodo.20613017)
 
 
 
